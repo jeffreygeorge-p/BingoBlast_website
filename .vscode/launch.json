@@ -4,9 +4,10 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "name": "Attach to Chrome",
-            "port": 9222,
+            "port": 5003,
             "request": "attach",
             "type": "chrome",
             "webRoot": "${workspaceFolder}"
@@ -14,8 +15,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open webpage.html",
-            "file": "/Users/jeffreygeorge/Documents/HTML & CSS/BingoBlast Design Webpage/webpage.html"
+            "name": "Open index.html",
+            "file": "/Users/jeffreygeorge/Documents/HTML & CSS/BingoBlast Design Webpage/index.html"
         }
     ]
 }
