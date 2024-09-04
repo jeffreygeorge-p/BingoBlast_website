@@ -8,7 +8,12 @@ name: CICD
 on:
   push:
     branches:
-    - master
+      - main
+      - release/*
+    
+  pull_request:
+    branches:
+    - main
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -23,9 +28,9 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v3
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 16
     - name: Install application packages 
       run: yarn install
     - name: Building an application
