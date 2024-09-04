@@ -31,10 +31,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 16
-    - name: Install application packages 
-      run: yarn install
-    - name: Building an application
-      run: yarn build
+        
       env:
         CI: false
     - name: Deploying to Firebase
