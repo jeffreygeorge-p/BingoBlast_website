@@ -45,9 +45,10 @@ jobs:
         CI: false
     - name: Deploying to Firebase
       uses: w9jds/firebase-action@master
-      with:
+      with: 
           args: deploy --only hosting
       env:
         FIREBASE_TOKEN: ${{ secrets.BINGOBLAST_SECRET }}
+        PROJECT_ID: bingo-blast-174dd
         
     
