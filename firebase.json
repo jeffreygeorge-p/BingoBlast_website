@@ -1,5 +1,5 @@
 {
-  "hosting": {
+  "hosting": [ {
     "target": "production", 
     "public": "index.html",
     "ignore": [
@@ -13,7 +13,7 @@
         "destination": "/index.html"
       }
     ]
-  },
+  }],
   "functions": {
     "predeploy": [
       "npm --prefix \"$RESOURCE_DIR\" run lint",
